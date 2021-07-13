@@ -18,11 +18,13 @@
       <ion-item *ngFor="let match of matches">
         <ion-grid (click)="goToSummary(match.id)">
           <ion-row>
+            <ion-img src={{match.logoTeamA}} style="width: 100px; height: 100px;"></ion-img>
             <ion-col>{{match.teamA}}</ion-col>
             <ion-col>
               <p>{{match.score}}</p>
               <p>({{match.finished ? 'Finalizado' : 'En curso'}})</p>
             </ion-col>
+            <ion-img src={{match.logoTeamB}} style="width: 80px; height: 80px;"></ion-img>
             <ion-col>{{match.teamB}}</ion-col>
           </ion-row>
         </ion-grid>

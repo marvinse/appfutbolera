@@ -6,11 +6,34 @@
 </ion-header>
 
 <ion-content>
-  <h1>{{match.teamA}} vrs {{match.teamB}}</h1>
-  <h2>{{match.score}}</h2>
+  <!-- <h1>{{match.teamA}} vrs {{match.teamB}}</h1> -->
+
+  <ion-grid>
+    <ion-row>
+      <ion-img src={{match.logoTeamA}} style="width: 100px; height: 100px;"></ion-img>
+      <ion-col>{{match.teamA}}</ion-col>
+      <ion-col>
+        <h1>Vs</h1>
+        <p>{{match.score}}</p>
+
+      </ion-col>
+      <ion-img src={{match.logoTeamB}} style="width: 80px; height: 80px;"></ion-img>
+      <ion-col>{{match.teamB}}</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- <h2>{{match.score}}</h2> -->
   <ion-list>
     <ion-item *ngFor="let event of match.events">
-      <p>{{event}}</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <p>{{event.minute}} - {{event.event}} <ion-img src={{event.image}} style="width: 30px; height: 30px;"></ion-img></p>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-item>
   </ion-list>
   <ion-button color="warning" *ngIf="!match.finished" (click)="alertConfirmation()">Borrar partido</ion-button>
