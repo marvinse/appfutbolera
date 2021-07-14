@@ -1,12 +1,13 @@
 /* eslint-disable max-len */
 import { Injectable } from '@angular/core';
+import { match } from '../models/match.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MatchesService {
 
-  private matches = [
+  private matches : match[] = [
     {
       id: 1,
       teamA : 'FC Barcelona',
@@ -22,12 +23,6 @@ export class MatchesService {
         {minute: 54+' min', event: ' Goool de Bale', image: 'https://image.flaticon.com/icons/png/512/1800/1800944.png'},
         {minute: 57+' min', event: ' Tarjeta Roja a Pique', image: 'https://image.flaticon.com/icons/png/512/451/451718.png'},
         {minute: 75+' min', event: ' Goool de Griezmann', image: 'https://image.flaticon.com/icons/png/512/1800/1800944.png'},
-
-        /*'Gol Cavanni al min 24',
-        'Tarjeta amarilla para Lugano al min 29',
-        'Gol Campbell al min 54',
-        'Gol Duarte al min 57',
-        'Gol Ureña al min 86',*/
       ]
     },
     {

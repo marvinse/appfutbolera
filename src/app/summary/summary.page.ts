@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
+import { match } from '../models/match.model';
 import { MatchesService } from '../services/matches.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { MatchesService } from '../services/matches.service';
 })
 export class SummaryPage implements OnInit {
   matchId;
-  match;
+  match : match;
 
   constructor(
     private router: Router,
