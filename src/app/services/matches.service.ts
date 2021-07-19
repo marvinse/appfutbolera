@@ -11,9 +11,9 @@ export class MatchesService {
     {
       id: 1,
       teamA : 'FC Barcelona',
-      logoTeamA : 'http://assets.stickpng.com/images/584a9b3bb080d7616d298777.png',
+      logoTeamA : './assets/equipos/Barcelona.png',
       teamB : 'Real Madrid',
-      logoTeamB : 'http://assets.stickpng.com/images/584a9b47b080d7616d298778.png',
+      logoTeamB : './assets/equipos/Real_Madrid.png',
       finished: false,
       score: '2 - 1',
       events: [
@@ -28,9 +28,9 @@ export class MatchesService {
     {
       id: 2,
       teamA : 'FC Bayern',
-      logoTeamA : 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bayern_M%C3%BCnchen_Logo_%281996-2002%29.svg/1200px-Bayern_M%C3%BCnchen_Logo_%281996-2002%29.svg.png' ,
+      logoTeamA : './assets/equipos/Bayern.png' ,
       teamB : 'Chelsea',
-      logoTeamB : 'https://logodownload.org/wp-content/uploads/2017/02/chelsea-fc-logo-1.png',
+      logoTeamB : './assets/equipos/Chelsea.png',
       finished: true,
       score: '1 - 0',
       events: [
@@ -44,9 +44,9 @@ export class MatchesService {
     {
       id: 3,
       teamA : 'PSG',
-      logoTeamA : 'http://as00.epimg.net/img/comunes/fotos/fichas/equipos/large/49.png' ,
+      logoTeamA : './assets/equipos/psg.png' ,
       teamB : 'Juventus',
-      logoTeamB : 'https://a2.espncdn.com/combiner/i?img=%2Fi%2Fteamlogos%2Fsoccer%2F500%2F111.png',
+      logoTeamB : './assets/equipos/Juventus.png',
       finished: true,
       score: '1 - 2',
       events: [
@@ -62,9 +62,9 @@ export class MatchesService {
     {
       id: 4,
       teamA : 'Inter',
-      logoTeamA : 'http://assets.stickpng.com/images/584aaf7130d6736bca3d6ded.png' ,
+      logoTeamA : './assets/equipos/Inter.png' ,
       teamB : 'Atletico Madrid',
-      logoTeamB : 'https://logodownload.org/wp-content/uploads/2017/02/atletico-madrid-logo-1.png',
+      logoTeamB : './assets/equipos/Atletico_Madrid.png',
       finished: true,
       score: '1 - 1',
       events: [
